@@ -1,0 +1,56 @@
+<form class="container my-5 w-50 text-light" [formGroup]="productForm" (submit)="formOperation($event)">
+  <div class="mb-3">
+    <input type="text" formControlName="name" class="form-control bg-dark text-light" id="product-name" placeholder="Enter Product Name">
+    <ng-container *ngIf="getProductName.touched">
+      <div *ngIf="getProductName.hasError('required')" class="text-danger">
+        Name is required
+      </div>
+      <div *ngIf="getProductName.hasError('minlength')" class="text-danger">
+        Name must be greater than or equal 5 chars
+      </div>
+    </ng-container>
+  </div>
+  <div class="mb-3">
+    <input type="number" formControlName="price" class="form-control bg-dark text-light" placeholder="Enter Product Price">
+    <ng-container *ngIf="getProductPrice.touched">
+      <div *ngIf="getProductPrice.hasError('required')" class="text-danger">
+        Price is required
+      </div>
+      <div *ngIf="getProductPrice.hasError('min')" class="text-danger">
+        Price must be greater than or equal &dollar;10
+      </div>
+    </ng-container>
+  </div>
+  <div class="mb-3">
+    <input type="number" formControlName="quantity" class="form-control bg-dark text-light" placeholder="Enter Product Quantity">
+    <ng-container *ngIf="getProductQuantity.touched">
+      <div *ngIf="getProductQuantity.hasError('required')" class="text-danger">
+        Quantity is required
+      </div>
+      <div *ngIf="getProductQuantity.hasError('min')" class="text-danger">
+        Quantity must be greater than or equal 1
+      </div>
+    </ng-container>
+  </div>
+  <div class="mb-3">
+    <input type="url" formControlName="src" class="form-control bg-dark text-light" placeholder="Enter Product Image Url">
+    <ng-container *ngIf="getProductImageSrc.touched">
+      <div *ngIf="getProductImageSrc.hasError('required')" class="text-danger">
+        Image url is required
+      </div>
+    </ng-container>
+  </div>
+  <div class="mb-3">
+    <textarea formControlName="desc" class="form-control bg-dark text-light" rows="5" placeholder="Enter Product description" ></textarea>
+    <ng-container *ngIf="getProductDesc.touched">
+      <div *ngIf="getProductDesc.hasError('required')" class="text-danger">
+        Description is required
+      </div>
+      <div *ngIf="getProductDesc.hasError('maxlength')" class="text-danger">
+        Description must be less than or equal 500 chars
+      </div>
+    </ng-container>
+  </div>
+  <button type="submit" class="text-light btn">{{addFlag?'Add Product':'Edit Product'}}</button>
+</form>
+

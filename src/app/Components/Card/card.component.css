@@ -1,0 +1,107 @@
+.card{
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover .card-img-top{
+  scale: 1.1;
+}
+
+.heart,
+.add-cart,
+.card-img-top{
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.card-img-top{
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.heart{
+  top: 10px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.heart:hover{
+  scale: 1.1;
+  color:  #C51104;
+}
+
+
+.add-cart{
+  top: 10px;
+  right: 15px;
+  color: var(--text-color);
+
+}
+
+.add-cart:hover{
+  color: var(--main-color);
+  scale: 1.1;
+}
+
+
+
+.rate .star{
+  color: #FED201
+}
+
+.card-title{
+  color: var(--main-color);
+}
+.card{
+  position: relative;
+}
+
+.heart, .add-cart{
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.card-img-top{
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.heart{
+  top: 10px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.heart:hover{
+  scale: 1.1;
+  color:  #C51104;
+}
+
+
+.add-cart{
+  top: 10px;
+  right: 15px;
+  color: var(--text-color);
+
+}
+
+.add-cart:hover{
+  color: var(--main-color);
+  scale: 1.1;
+}
+
+
+
+.rate .star{
+  color: #FED201
+}
+
+.card-title{
+  color: var(--main-color);
+}

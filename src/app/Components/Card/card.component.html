@@ -1,0 +1,20 @@
+<div class="card h-100 bg-dark text-light">
+  <img src="{{product.src}}" class="align-self-center w-50 card-img-top" alt="..." loading="lazy">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <div class="product-price d-flex justify-content-between">
+      <p class="price fw-bold">${{product.price}}</p>
+      <div class="rate">
+        <i class="bi star bi-star-fill d-inline-block me-1"></i>
+        <i class="bi star bi-star-fill d-inline-block me-1"></i>
+        <i class="bi star bi-star-fill d-inline-block me-1"></i>
+        <i class="bi star bi-star-fill d-inline-block me-1"></i>
+        <i class="bi star bi-star-half"></i>
+      </div>
+    </div>
+
+    <p class="card-text">{{product.desc}}</p>
+    <a href="#" class="fs-3 add-cart position-absolute bi bi-bag-plus-fill"></a>
+  </div>
+  <i class="heart fs-5 position-absolute bi bi-heart-fill"></i>
+</div>

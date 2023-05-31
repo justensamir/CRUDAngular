@@ -1,0 +1,21 @@
+
+.content{
+  padding: 23.5px 0;
+}
+
+h1{
+  font-size: var(--big-font);
+}
+
+h1 span{
+  color: var(--main-color);
+}
+
+p{
+  font-size: var(--p-font);
+  color: var(--second-color);
+}
+
+img{
+  height: 500px;
+}

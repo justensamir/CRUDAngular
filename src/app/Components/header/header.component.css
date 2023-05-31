@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Merienda', cursive;
+}
+
+.active-link{
+  color: var(--main-color)
+}
+
+.navbar-brand img{
+  margin-right: 10px;
+}
+.navbar-brand{
+  font-size: 2rem;
+  font-weight: 600;
+
+  letter-spacing: 5px;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li a{
+  font-size: 1.1rem;
+  /* font-weight: 600; */
+  color: var(--text-color);
+  display: inline-block;
+  position: relative;
+}
+
+ul li a.icon{
+  color: var(--main-color);
+  transition: 0.2s;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+ul li a:hover,
+ul li a.active{
+  color: var(--main-color);
+}
+
+ul li:last-child a::before{
+  content: '0';
+  background-color: var(--text-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--main-color);
+  font-size: 12px;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+}

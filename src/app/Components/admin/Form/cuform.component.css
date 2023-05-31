@@ -1,0 +1,25 @@
+.container{
+  min-height: calc(100vh - 230px);
+}
+
+
+input, textarea {
+  caret-color: var(--main-color);
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 8px var(--main-color);
+  border-color: var(--main-color);
+}
+
+button{
+  background-color: var(--main-color);
+}
+
+.btn:hover{
+  background-color: #c28b0d;
+}
+
+textarea{
+  resize: none;
+}

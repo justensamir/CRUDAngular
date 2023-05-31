@@ -1,0 +1,43 @@
+.card{
+  position: relative;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.card-img-top{
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.card:hover .card-img-top{
+  translate: 0 -15px;
+}
+.card .card-title{
+  color: var(--main-color);
+  font-size: 1.4rem;
+}
+
+.card::before{
+  content: 'New Product';
+  background-color: var(--main-color);
+  padding: 5px 20px 5px 25px;
+  position: absolute;
+  top: 54px;
+  right: -30px;
+  rotate: -90deg;
+  font-weight: 700;
+}
+
+.card::after{
+  content:'';
+  position: absolute;
+  border-right: 18px solid transparent;
+  border-left: 17.75px solid transparent;
+  border-bottom: 20px solid rgb(33 37 41);
+  border-top: 10px solid transparent;
+  right: 24px;
+  top: 113px;
+}
